@@ -32,29 +32,22 @@ class Student extends Person {
 
     getMajor() {
         return this.#major;
+        
     }
-}
 
-const student = new Student("Alice Smith", 20, "Student", "Computer Science");
-
-const studentInfoDiv = document.getElementById('student-info');
-studentInfoDiv.innerHTML = `
-    <h2>Student Information</h2>
-    <p><strong>Name:</strong> ${student.getName()}</p>
-    <p><strong>Age:</strong> ${student.getAge()}</p>
-    <p><strong>Occupation:</strong> ${student.getOccupation()}</p>
-    <p><strong>Major:</strong> ${student.getMajor()}</p>
-`;
-class Student extends Person {
-    constructor(name, age, occupation, major) {
-        super(name, age, occupation);  
-        this.major = major;            
-    }
     displayInfo() {
-        return `Name: ${this.getName()}<br>
-                Age: ${this.getAge()}<br>
-                Occupation: ${this.getOccupation()}<br>
-                Major: ${this.major}`;
+        return `
+            <h2>Student Information</h2>
+            <p><strong>Name:</strong> ${this.getName()}</p>
+            <p><strong>Age:</strong> ${this.getAge()}</p>
+            <p><strong>Occupation:</strong> ${this.getOccupation()}</p>
+            <p><strong>Major:</strong> ${this.getMajor()}</p>
+        `;
+        
     }
 }
+
+const student = new Student("Jay Barrios", 20, "Student", "Photographer");
+const studentInfoDiv = document.getElementById('student-info');
+studentInfoDiv.innerHTML = student.displayInfo();
 
