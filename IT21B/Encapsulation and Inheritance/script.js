@@ -47,7 +47,7 @@ class Student extends Person {
     }
 }
 
-const student = new Student("Jay Barrios", 20, "Student", "Photographer");
+const student = new Student("Jay Barrios", 20, "None", "Batchelor of Science in Information Technology");
 const studentInfoDiv = document.getElementById('student-info');
 studentInfoDiv.innerHTML = student.displayInfo();
 
