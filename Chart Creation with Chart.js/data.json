@@ -1,0 +1,22 @@
+{
+    "barChartData": {
+      "labels": ["January", "February", "March", "April", "May"],
+      "datasets": [
+        {
+          "label": "Sales",
+          "data": [65, 59, 80, 81, 56],
+          "backgroundColor": ["#FF6384", "#36A2EB", "#FFCE56", "#4BC0C0", "#9966FF"]
+        }
+      ]
+    },
+    "pieChartData": {
+      "labels": ["Electronics", "Fashion", "Home Appliances"],
+      "datasets": [
+        {
+          "data": [300, 150, 100],
+          "backgroundColor": ["#FF6384", "#36A2EB", "#FFCE56"]
+        }
+      ]
+    }
+  }
+  
